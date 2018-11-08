@@ -1,0 +1,90 @@
+body{
+    background: #ededed;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+#mendf h1{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    margin-top: 3px; 
+}  
+
+#middle{
+    color: #000;
+    background-color:#777;
+    text-align:center;
+    padding:50px 80px;
+    text-align: justify;
+    text-align: center;
+}
+
+.cap {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	color: #000;
+  }
+  
+  .cap span.border {
+	background-color: #111;
+	color: #fff;
+	padding: 30px;
+	font-size: 25px;
+	letter-spacing: 10px;
+  }
+  
+  h3 {
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	font: 20px "Lato", sans-serif;
+	color: #111;
+  }
+  
+.bq-1, .bq-2, .bq-3 {
+	/*position: relative;*/
+	/*opacity: 0.65;*/
+	/*background-attachment: fixed;*/
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+  
+  }
+
+.bq-1 {
+	background-image: url("resources/image/chairs-tables-png.png");
+	min-height: 100%;
+  }
+
+  .sosi {
+    /*position: absolute;*/
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0;
+    right: 0;
+    /*position: absolute;*/
+    line-height: 0px;
+    display: block;
+    padding: 0;
+    text-indent: -9999px;
+    background: #fff url(https://cdn3.iconfinder.com/data/icons/picons-social/57/38-instagram-512.png) 50% 50%/25px 25px no-repeat;
+  }
+  #sosi{
+    width: 60px;
+    height: 60px;
+  }
+  .sosi:hover{
+    background: #efefef url(https://cdn3.iconfinder.com/data/icons/picons-social/57/38-instagram-512.png) 50% 50%/25px 25px no-repeat;
+  }
+
+  #vid{
+    position: absolute;
+	width: 100%;
+	text-align: center;
+	color: #000;
+  }
+  #infopod{
+
+  }
+  #videopod{
+
+  }
