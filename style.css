@@ -1,11 +1,11 @@
 body{
     background: #ededed;
-    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-family: 'Roboto', "Times New Roman", Times, serif;
 }
 
 #mendf h1{
-    font-family: "Comic Sans MS", cursive, sans-serif;
-    margin-top: 3px; 
+    font-family: 'Neuton', "Times New Roman", Times, serif;
+    margin-top: 5px; 
 }  
 
 #middle{
@@ -55,10 +55,10 @@ body{
   
   }
 
-.bq-1 {
-	background-image: url("resources/image/chairs-tables-png.png");
-	min-height: 100%;
-  }
+  .bq-1 {
+    background-image: url("resources/image/chairs-tables-png.png");
+    min-height: 100%;
+    }
 
   .sosi {
     /*position: absolute;*/
