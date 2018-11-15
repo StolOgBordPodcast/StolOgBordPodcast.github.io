@@ -1,35 +1,33 @@
 <html>
-	<head>
-			<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<!-- tab -->
-		<link rel="icon" href="resources/image/chairs-tables-png.png">
-		<title>Stol og Bord</title>
-		
-		<!-- scripts -->
-		<script src="Index.js"></script>
-		
-		<!-- css / style -->
-		<link rel="stylesheet" type="text/css" href="resources/css/new.me.css" />
-		<link rel="stylesheet" type="text/css" href="style.css" />
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<!-- IMPORT -->
-		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Neuton" rel="stylesheet">
-	</head>
-		
-	<body id="body">
-			<div id="top" style="width: 1px; height: 60px;"></div>
-			<div class="bq-1">				
-				<div class="cap">
-						<span class="border">Velkommen</span>
-					</div>
-				</div>
-			<div id="middles" style="width: 1px; height: 60px;"></div>
-		<div id="middle">
-			<h3>Om</h3>
-			<p>Programlederene Niklas og Mikal tar for seg aktuelle problem i hverdagen, men hvor mange kan de løse?
-			</p>
+	<!-- tab -->
+	<link rel="icon" href="resources/image/chairs-tables-png.png">
+	<title>Stol og Bord</title>
+
+	<!-- css / style -->
+	<link rel="stylesheet" type="text/css" href="resources/css/new.me.css" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+
+	<!-- IMPORT -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Neuton" rel="stylesheet">
+</head>
+
+<body id="body">
+	<div id="top" style="width: 1px; height: 60px;"></div>
+	<div class="bq-1">
+		<div class="cap">
+			<span class="border">Velkommen</span>
+		</div>
+	</div>
+	<div id="middles" style="width: 1px; height: 60px;"></div>
+	<div id="middle">
+		<h3>Om</h3>
+		<p>Programlederene Niklas og Mikal tar for seg aktuelle problem i hverdagen, men hvor mange kan de løse?
+		</p>
 	</div>
 	<div id="pods" style="width: 1px; height: 65px;"></div>
 
@@ -44,40 +42,51 @@
 
 			</div>
 			<div id="videopod">
-				<audio controls loop>
-					<source src="./resources/music/ccda7576-0fe3-4973-96f2-e976135ca891.wav" type="audio/wav">
-					Your browser does not support the audio element.
-				  </audio>
+				<audio id="audio" controls="controls">
+					<source id="audioSource" src="resources/music/jeff.wav" /> Your browser does not support the audio format.
+				</audio>
+				<p id="duck"></p>
 			</div>
 			<a href="link.html#ki">Kilder</a>
 		</div>
 	</div>
 	<div style="width: 1px; height: 1000px;"></div>
-	<div id="vid"><h3>Velkomen til bunns</h3><a href="#top"><img alt="monkey" title="Trykk meg til å gå til toppen" height="62" width="62" src="./resources/image/535z.gif"/></a></div>
-		<!-- MENU -->
-		<div id="mendf">
-			<h1>Stol og Bord</h1>
-		</div>
-		<input type="checkbox" id="menu" name="menu" class="menu-checkbox">
-		<div class="menu">
-		  <label class="menu-toggle" id="menuhov" for="menu"><span>Toggle</span></label>
-		  <ul>
+	<div id="vid">
+		<h3>Velkomen til bunns</h3>
+		<a href="#top">
+			<img alt="monkey" title="Trykk meg til å gå til toppen" height="62" width="62" src="./resources/image/535z.gif" />
+		</a>
+	</div>
+	<!-- MENU -->
+	<div id="mendf">
+		<h1 onclick="myFunction()">Stol og Bord</h1>
+	</div>
+	<input type="checkbox" id="menu" name="menu" class="menu-checkbox">
+	<div class="menu">
+		<label class="menu-toggle" id="menuhov" for="menu">
+			<span>Toggle</span>
+		</label>
+		<ul>
 			<li>
-			  <a href="#top">Tilbake til toppen</a>
+				<a href="#top">Tilbake til toppen</a>
 			</li>
 			<li>
 				<a href="#middles">Om</a>
 			</li>
 			<li>
-					<a href="#pods">Podcaster</a>
-				</li>
-				<li>
-					<a href="link.html">Kilder
-					</a>
-				</li>
-			</ul>
-		</div>
-		
-			<div id="sosi" class="sosi" onclick="window.open('https://www.instagram.com/stol_og_bord_podcast/', '_blank');"></div>
-	</body>
+				<a href="#pods">Podcaster</a>
+			</li>
+			<li>
+				<a href="link.html">Kilder
+				</a>
+			</li>
+		</ul>
+	</div>
+
+	<div id="sosi" class="sosi" onclick="window.open('https://www.instagram.com/stol_og_bord_podcast/', '_blank');"></div>
+
+	<!-- scripts -->
+	<script src="Index.js"></script>
+</body>
+
 </html>
