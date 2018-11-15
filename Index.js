@@ -12,14 +12,7 @@ var now = new Date().getTime();
 var distance = countDownDate - now;
 
 if (distance < 0) {
-    console.log("YE the time is now")
-
-    var audio = document.getElementById('audio');
-    var source = document.getElementById('audioSource');
-    source.src = ("resources/music/jeff.wav");
-    audio.load(); //call this to just preload the audio without playing
-    //audio.play(); //call this to play the song right away
-
+    cat();
 } else {
     console.log("Wlep begining countdown")
     // Update the count down every 1 second
@@ -44,22 +37,7 @@ if (distance < 0) {
         // If the count down is over, write some text 
         if (distance < 0) {
             clearInterval(x);
-            document.getElementById("duck").innerHTML = "";
-
-
-            //e.preventDefault();
-
-            //var elm = e.target;
-            var audio = document.getElementById('audio');
-
-            var source = document.getElementById('audioSource');
-
-            source.src = ("resources/music/jeff.wav");
-
-
-
-            audio.load(); //call this to just preload the audio without playing
-            //audio.play(); //call this to play the song right away
+            cat();
 
         }
     }, 1000);
@@ -73,5 +51,18 @@ function myFunction(elmnt, clr) {
         source.src = ("resources/music/sans.ogg");
         audio.load();
     }
+
+}
+
+function cat(elmnt, clr) {
+    console.log("YE the time is now")
+    document.getElementById("duck").innerHTML = "";
+
+    var audio = document.getElementById('audio');
+    var source = document.getElementById('audioSource');
+    source.src = ("resources/music/error.wav");
+    audio.load(); //call this to just preload the audio without playing
+    //audio.play(); //call this to play the song right away
+
 
 }
