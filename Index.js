@@ -60,7 +60,7 @@ function cat(elmnt, clr) {
 
     var audio = document.getElementById('audio');
     var source = document.getElementById('audioSource');
-    source.src = ("resources/music/error.wav");
+    source.src = ("resources/music/Podcast.ogg");
     audio.load(); //call this to just preload the audio without playing
     //audio.play(); //call this to play the song right away
 
